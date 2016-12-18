@@ -1,22 +1,24 @@
-html, body{
+body {
 	margin: 0;
 	padding: 0;
-	background-color: #141516;
 	border: none;
-
 	color: #FFFFFF;
+	font-family: 'fira mono';
+	font-weight: lighter;
 	font-size: 14px;
 }
 
-* {
-	font-family: 'fira mono';
-	font-weight: lighter;
+h3 {
+	font-size: 1em;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-top: 0;
 }
 
 #container {
 	position: absolute;
 	padding: 0 20px 0 20px;
-	top: 35%;
+	top: 25%;
 	left: 0;
 	right: 0;
 	margin-left: auto;
@@ -25,29 +27,31 @@ html, body{
 	height: auto;
 }
 
-#header {
+#clock {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	margin-bottom: 50px;
+	padding: 8px;
+  text-transform: uppercase;
+	text-align: center;
+}
+
+.time {
+	font-size: 2.25em;
+}
+
+.hex {
+	font-size: 1.25em;
+}
+
+.box {
 	-webkit-box-shadow: 1px 1px 20px 0px #000;
 	-moz-box-shadow: 1px 1px 20px 0px #000;
 	box-shadow: 1px 1px 20px 0px #000;
 	background-color: #282a36;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  font-size: 14px;
+	border: 5px solid #282a36;
 	margin: 4px;
 	padding: 8px;
-	border: 5px solid #282a36;
-  text-transform: uppercase;
 }
-
-#date {
-	font-weight: bold;
-	float: left;
-}
-
-#clock {
-	font-weight: bold;
-	float:right;
-}
-
 
 #links {
 	display: -moz-box;
@@ -55,72 +59,29 @@ html, body{
 	width: 100%;
 }
 
-.linksbox {
-	-webkit-box-shadow: 1px 1px 20px 0px #000;
-	-moz-box-shadow: 1px 1px 20px 0px #000;
-	box-shadow: 1px 1px 20px 0px #000;
+.tag {
 	-moz-box-flex: 1;
 	-webkit-box-flex: 1;
-	margin: 4px;
-	padding: 8px 8px 8px 8px;
-	background-color: #282a36;
-	border: 5px solid #282a36;
 }
 
-.linksbox h3 {
-	padding-bottom: 5px;
+.tag h3 {
+	padding-bottom: 8px;
 }
 
-.linksbox a{
+.tag a {
+	padding-bottom: 2px;
 	display: block;
 	text-decoration: none;
 	font-weight: bold;
 }
 
-.linksbox a.cyan:hover {
-	color: #4babdb;
+.tag a:hover {
 	text-decoration: underline;
 }
 
-.linksbox a.red:hover {
-	color: #ff5c57;
-	text-decoration: underline;
-}
-
-h3 {
-	font-size: 14px;
-	padding-bottom: 0;
-	margin-bottom: 0;
-	margin-top: 0;
-}
-
-.cyan {
-	color: #9aedfe;
-	padding: 0;
-}
-
-.blue {
-	color: #57c7ff;
-	padding: 0;
-}
-
-.green {
-	font-weight: bold;
-	padding: 0;
-	color: #5af78e;
-}
-
-.pink {
-	padding: 0;
-	color: #ff6ac1;
-}
-
-.red {
-	padding: 0;
-	color: #ff5c57;
-}
-
-.gold {
-	padding: 0;
-	color: #ff8800;
-}
+.cyan  { color: #9aedfe; }
+.blue  { color: #57c7ff; }
+.green { color: #5af78e; }
+.pink  { color: #ff6ac1; }
+.red   { color: #ff5c57; }
+.gold  { color: #ff8800; }

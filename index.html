@@ -7,7 +7,7 @@
 	<title>Homepage</title>
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="css/style.css" />
 	<!-- Fonts Google -->
@@ -15,14 +15,19 @@
 </head>
 <body>
 	<div id="container">
-		<div class="row green" id="header">
-        <div id="date"></div>
-        <div id="clock"></div>
+		<div id="clock">
+			<span class="time"></span>
+		</br>
+			<span class="hex"></span>
+		</div>
+
+		<div class="box">
+        <span class="date"></span>
     </div>
 
 		<div id="links">
 			<!-- General -->
-			<div class="linksbox">
+			<div class="box tag" id="general">
 				<h3><span class="blue"> ~ </span> <span class="pink">❯</span> [<span class="green">General</span>]<span class="pink">:</span> ls</h3>
         <a class="blue" href="http://stackoverflow.com/">Stack Overflow</a>
 				<a class="red"  href="https://github.com/">Github</a>
@@ -30,7 +35,7 @@
         <a class="gold" href="https://hn.premii.com">Hacker News</a>
 			</div>
 			<!-- Media -->
-			<div class="linksbox">
+			<div class="box tag" id="media">
 				<h3><span class="blue"> ~ </span> <span class="pink">❯</span> [<span class="green">Media</span>]<span class="pink">:</span> ls</h3>
 				<a class="cyan" href="https://facebook.com">Facebook</a>
 				<a class="blue" href="https://tumblr.com">Tumblr</a>
@@ -39,7 +44,7 @@
         <a class="red"  href="https://www.twitch.tv/directory">Twitch</a>
 			</div>
 			<!-- School -->
-			<div class="linksbox">
+			<div class="box tag" id="school">
 				<h3><span class="blue"> ~ </span> <span class="pink">❯</span> [<span class="green">School</span>]<span class="pink">:</span> ls</h3>
         <a class="red"  href="https://elearn.uta.edu">Elearn</a>
 				<a class="blue" href="https://uta.edu/mymav">MyMav</a>
