@@ -9,14 +9,16 @@ function doClock() {
   var hours = d.getHours();
   var mins  = d.getMinutes();
   var secs  = d.getSeconds();
-  var ampm  = hours < 12 ? "AM" : "PM";
 
-  // hours = hours%12   ? hours%12 : 12;  // 12 hour modifier
+  // 12 hour clock
+  // var ampm  = hours < 12 ? "AM" : "PM";
+  // hours = hours%12   ? hours%12 : 12;
+
   hours = hours <= 9 ? "0" + hours : hours;
   mins  = mins <= 9  ? "0" + mins  : mins;
   secs  = secs <= 9  ? "0" + secs  : secs;
 
-  $('.time').html(hours+":"+mins+":"+secs+" "+ampm);
+  $('.time').html(hours+":"+mins+":"+secs);
 
   var months =
     ["January", "February", "March", "April", "May", "June", "July",
